@@ -1,0 +1,26 @@
+.form {
+  @include flex(column, wrap, center, center, none);
+
+  border: 2px solid #835009;
+  background-color: map-get($backcolor, color1);
+  padding: 80px;
+  border-radius: 15px;
+  gap: 20px;
+}
+
+.personal-dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  color: map-get($colortxt, colortxt1);
+}
+
+.date {
+  @include flex(column, wrap, start, center, none);
+}
+.input-field {
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #906323;
+}

@@ -1,0 +1,55 @@
+.button {
+  background-color: map-get($backcolor, color5);
+  border-radius: 5px;
+  color: map-get($colortxt, colortxt2);
+  padding: 5px;
+  font-size: 15px;
+  margin-left: 50px;
+  z-index: 1;
+  &:active {
+    background-color: map-get($backcolor, color4);
+  }
+}
+.button2 {
+  width: 200px;
+  background-color: map-get($backcolor, color4);
+  border-radius: 20px;
+  color: map-get($colortxt, colortxt2);
+  padding: 20px;
+  font-size: 15px;
+  border-color: #ffffff;
+  z-index: 1;
+  &:active {
+    background-color: map-get($backcolor, color6);
+  }
+}
+
+.btn-form {
+  height: 50px;
+  width: 120px;
+  background-color: transparent;
+  border: 1px solid #311f06;
+  background-color: map-get($backcolor, color7);
+  border-radius: 20px;
+  color: map-get($colortxt, colortxt2);
+  z-index: 1;
+  &:active {
+    background-color: map-get($backcolor, color4);
+  }
+}
+
+.btn {
+  @include flex(column, wrap, center, center, 20px);
+  width: 200px;
+  background-color: map-get($backcolor, color6);
+  border-radius: 20px;
+  color: map-get($colortxt, colortxt2);
+  padding: 20px;
+  font-size: 15px;
+  border-color: #ffffff;
+  margin-top: 20px;
+  z-index: 1;
+  &:active {
+    background-color: map-get($backcolor, color7);
+  }
+}

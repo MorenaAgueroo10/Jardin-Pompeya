@@ -1,0 +1,92 @@
+.presentacion {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../Images/Images/Jardin.jpg");
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  @include flex(none, wrap, center, center, none);
+}
+.presentacion::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: map-get($backcolor, color2);
+}
+.presentacion.sobre-nosotros {
+  background-image: url("../Images/Images/Jardin.png.png");
+}
+.presentacion.niveles {
+  background-image: url("../Images/Images/Chicos.jpg");
+}
+.presentacion.festejos {
+  background-image: url("../Images/Images/cumple-jardin.png");
+}
+.presentacion.dudas {
+  background-image: url("../Images/Images/frente-jardin.jpg");
+  flex-direction: column;
+  gap: 10px;
+}
+.presentacion.dudas2 {
+  background-image: url("../Images/Images/egresados.jpg");
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.presentacion.info {
+  background-image: url("../Images/Images/Salon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.presentacion.inscripcion {
+  background-image: url("../Images/Images/profes.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+.info {
+  height: 200px;
+  @include flex(none, none, center, center, 60px);
+  width: 100%;
+  margin: 0;
+  margin-top: 10px;
+  height: 300px;
+}
+
+.circulo {
+  @include flex(row, wrap, space-evenly, center, 10px);
+
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 40px;
+  width: 110px;
+  height: 120px;
+  font-size: 30px;
+  color: map-get($colortxt, colortxt2);
+  background-color: map-get($backcolor, color6);
+}
+
+.info2 {
+  @include flex(none, none, center, center, none);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 30px;
+  color: map-get($colortxt, colortxt2);
+}
+.dudass {
+  color: white;
+  text-shadow: 3px 0 #000, -3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000,
+    3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000;
+  font-size: 40px;
+  z-index: 1;
+}

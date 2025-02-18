@@ -1,56 +1,311 @@
-@import url("https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   height: 100vh;
   background-color: #ede8d0;
 }
-.nav-bar {
+
+.title, .title1 {
+  font-family: "Twinkle Star", serif;
+  font-size: 60px;
+  z-index: 1;
+  color: white;
+  text-shadow: 3px 0 #000, -3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000, 3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000;
+}
+
+.cards1 {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  background-color: #906323;
-  color: #ede8d0;
+  padding: 20px;
+}
+
+.objetivo1 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+  padding-right: 50px;
+  height: 40vh;
+  width: 80%;
+}
+
+.objetivo2 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+  height: 40vh;
+  width: 80%;
+  margin-top: 10px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.objetivo3 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+  padding-right: 50px;
+  height: 40vh;
+  width: 80%;
+  margin-top: 10px;
+}
+
+p {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  justify-items: center;
+  row-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card1 {
+  display: grid;
+  justify-items: center;
+  row-gap: none;
+  align-items: center;
+  background-color: #ffffff;
+  font-family: "Twinkle Star", serif;
+  border-radius: 20px;
+  width: 450px;
+  height: 370px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.cardss {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+}
+
+.sala {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  border-top: 2px solid black;
+}
+
+.contenido {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.informacion2 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  width: 80%;
+  height: 500px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 2px 1px #ebb57b;
+}
+
+.inscripcion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 300px;
   width: 100%;
 }
 
-.logo {
-  margin-top: 10px;
-  height: 70px;
-  width: 70px;
-  object-fit: contain;
-}
-.menu {
+.presentacion5 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../Images/Images/contacto.png");
+  background-repeat: no-repeat;
+  height: 300px;
   display: flex;
+  flex-direction: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.footer {
+  background-color: #906323;
+  color: white;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: none;
+  height: 60px;
+}
+
+.containersec {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  margin-top: 40px;
+}
+
+.nav-bar {
+  background-color: #906323;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.nav-bar .menu li {
   text-decoration: none;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: center;
   gap: 20px;
 }
-a {
+.nav-bar .menu li a {
   text-decoration: none;
-  color: #ede8d0;
+  color: white;
+  transition: all 1.5s;
 }
-li {
+.nav-bar .menu li a:hover {
+  background-color: #5f3e0f;
+}
+
+.button {
+  background-color: #946f38;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  margin-left: 50px;
+  z-index: 1;
+}
+.button:active {
+  background-color: #be8636;
+}
+
+.button2 {
+  width: 200px;
+  background-color: #be8636;
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+  border-color: #ffffff;
+  z-index: 1;
+}
+.button2:active {
+  background-color: #906323;
+}
+
+.btn-form {
+  height: 50px;
+  width: 120px;
+  background-color: transparent;
+  border: 1px solid #311f06;
+  background-color: #5f3e0f;
+  border-radius: 20px;
+  color: white;
+  z-index: 1;
+}
+.btn-form:active {
+  background-color: #be8636;
+}
+
+.btn {
   display: flex;
-  text-decoration: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  font-size: 18px;
+  gap: 20px;
+  width: 200px;
+  background-color: #906323;
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+  border-color: #ffffff;
+  margin-top: 20px;
+  z-index: 1;
 }
+.btn:active {
+  background-color: #5f3e0f;
+}
+
 .presentacion {
   background-size: cover;
   background-position: center;
   background-image: url("../Images/Images/Jardin.jpg");
   background-repeat: no-repeat;
   height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
 }
 
 .presentacion::after {
@@ -61,7 +316,7 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #00000047;
+  background-color: rgba(0, 0, 0, 0.2784313725);
 }
 
 .presentacion.sobre-nosotros {
@@ -75,11 +330,13 @@ li {
 .presentacion.festejos {
   background-image: url("../Images/Images/cumple-jardin.png");
 }
+
 .presentacion.dudas {
   background-image: url("../Images/Images/frente-jardin.jpg");
   flex-direction: column;
   gap: 10px;
 }
+
 .presentacion.dudas2 {
   background-image: url("../Images/Images/egresados.jpg");
   flex-direction: column;
@@ -87,286 +344,186 @@ li {
   margin-top: 10px;
 }
 
-.title {
-  font-family: "Twinkle Star", serif;
-  font-size: 60px;
-  z-index: 1;
-  color: white;
-  text-shadow: 3px 0 #000, -3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000,
-    3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000;
-}
-
-.titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #402704;
-  font-size: 50px;
-  margin-top: 20px;
-}
-.objetivo1 {
-  background-color: #ffffff;
-  display: flex;
-  height: 40vh;
-  width: 100%;
-  margin: 0px;
-}
-.Images {
-  height: 90%;
-  width: 90%;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-p {
-  margin-left: 10px;
-  margin-top: 20px;
-  font-size: 20px;
-}
-.objetivo2 {
-  background-color: #ffffff;
-  display: flex;
-  height: 40vh;
-  width: 100%;
-  margin: 0px;
-  margin-top: 10px;
-
-  flex-direction: row-reverse;
-}
-.objetivo3 {
-  background-color: #ffffff;
-  display: flex;
-  height: 40vh;
-  width: 100%;
-  margin: 0px;
-  margin-top: 10px;
-}
-.info {
+.presentacion.info {
+  background-image: url("../Images/Images/Salon.jpg");
   background-size: cover;
   background-position: center;
-  background-image: url("../Images/Images/Salon.jpg");
   background-repeat: no-repeat;
+}
+
+.presentacion.inscripcion {
+  background-image: url("../Images/Images/profes.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+.info {
   height: 200px;
   display: flex;
+  flex-direction: none;
+  flex-wrap: none;
   justify-content: center;
   align-items: center;
+  gap: 60px;
   width: 100%;
   margin: 0;
   margin-top: 10px;
-  gap: 60px;
   height: 300px;
 }
 
 .circulo {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
   text-align: center;
   border-radius: 50%;
   margin-top: 40px;
   width: 110px;
   height: 120px;
   font-size: 30px;
-  color: #ffffff;
-  background-color: #be8636;
+  color: white;
+  background-color: #906323;
 }
+
 .info2 {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
   font-size: 30px;
-  color: #ffffff;
-}
-.button {
-  background-color: #946f38;
-  border-radius: 5px;
-  color: #ffffff;
-  padding: 5px;
-  font-size: 15px;
-  margin-left: 50px;
-  border-color: #ffffff;
-}
-.footer {
-  background-color: #906323;
-  color: #ffffff;
-  justify-content: start;
-  align-items: center;
-  height: 60px;
-  display: flex;
-  margin-top: 10px;
+  color: white;
 }
 
-.institucion {
-  margin-top: 20px;
-  width: 100%;
-  height: 50vh;
-  display: block;
+.dudass {
+  color: white;
+  text-shadow: 3px 0 #000, -3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000, 3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000;
+  font-size: 40px;
+  z-index: 1;
 }
+
+.Images {
+  height: 90%;
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
 .Images2 {
   object-fit: fill;
   height: 500px;
   width: 100%;
   margin-top: 10px;
 }
+
 .Imagesdir {
   display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
   height: 250px;
   width: 20%;
   margin-left: 10px;
   object-fit: fill;
 }
+
 .Directivas {
   display: flex;
-  justify-items: center;
+  flex-direction: none;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  height: 300px;
+  gap: none;
+  height: auto;
   width: 100%;
   border-top: 2px solid black;
 }
-.trayectoria {
+.Directivas .trayectoria {
   font-size: 20px;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  row-gap: 20px;
+video {
+  width: 100%;
+  height: 80vh;
 }
-.card1 {
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  background-color: #ffffff;
-  font-family: "Twinkle Star", serif;
-  border-radius: 20px;
-  width: 450px;
-  height: 380px;
-  text-align: center;
-}
+
 .instalacion {
-  width: 330px;
+  width: 340px;
   height: 300px;
-  border-radius: 20px;
+  border-radius: 10px;
   display: block;
   justify-content: center;
   align-items: center;
   object-fit: fill;
 }
 
-.cardss {
-  width: 100%;
+.logo {
+  margin-top: 5px;
+  height: 90px;
+  width: 80px;
+  object-fit: contain;
+}
 
-  margin: 0;
-  padding: 20px;
-}
-.maternal {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  height: 40vh;
-  width: 100%;
-  border-top: 2px solid black;
-}
 .foto {
-  display: grid;
-  grid-template-rows: 1fr;
   width: 300px;
   height: 200px;
   border-radius: 8px;
   object-fit: fill;
 }
-.contenido {
-  display: block;
-  align-items: center;
+
+.fotos1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: none;
+  width: 600px;
+  height: 330px;
+  object-fit: contain;
 }
+
+.title, .title1 {
+  font-family: "Twinkle Star", serif;
+  font-size: 60px;
+  z-index: 1;
+  color: white;
+  text-shadow: 3px 0 #000, -3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000, 3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000;
+}
+
+.title1 {
+  font-size: 61px;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  color: #402704;
+  font-size: 50px;
+  margin-top: 20px;
+  text-align: center;
+}
+
 .nivel-titulo {
   justify-content: center;
   align-items: center;
   display: flex;
-}
-
-.sala-de-2 {
-  display: flex;
-
-  gap: 20px;
-
-  padding: 20px;
-  height: 40vh;
-  width: 100%;
-  border-top: 2px solid black;
-  margin-top: 30px;
-}
-.sala-de-3 {
-  display: flex;
-
-  gap: 20px;
-
-  padding: 20px;
-  height: 40vh;
-  width: 100%;
-  border-top: 2px solid black;
-  margin-top: 30px;
-}
-.sala-de-4 {
-  display: flex;
-
-  gap: 20px;
-
-  padding: 20px;
-  height: 40vh;
-  width: 100%;
-  border-top: 2px solid black;
-  margin-top: 30px;
-}
-.sala-de-5 {
-  display: flex;
-
-  gap: 20px;
-
-  padding: 20px;
-  height: 40vh;
-  width: 100%;
-  border-top: 2px solid black;
-  margin-top: 30px;
-}
-
-.dudass {
-  color: white;
-  text-shadow: 3px 0 #000, -3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000,
-    3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000;
-  font-size: 40px;
-  z-index: 1;
-}
-.button2 {
-  width: 200px;
-  background-color: #946f38;
-  border-radius: 20px;
-  color: #ffffff;
-  padding: 20px;
-  font-size: 15px;
-  border-color: #ffffff;
-  z-index: 1;
-}
-
-.cumple {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.fotos {
-  display: flex;
-  flex-direction: column;
-  width: 700px;
-  height: 300px;
-}
-.container {
-  display: flex;
-  flex-direction: column;
 }
 
 .titulo-festejo {
@@ -375,128 +532,54 @@ p {
   font-size: 25px;
 }
 
-.containersec {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-.informacion2 {
-  background-color: #ffffff;
-  display: flex;
-
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  height: 500px;
-  margin-top: 10px;
-}
-.container2 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-.fotos1 {
-  display: flex;
-  flex-direction: row;
-  width: 600px;
-  height: 330px;
-  object-fit: contain;
+h3 {
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
 }
 
-.presentacion5 {
-  background-size: cover;
-  background-position: center;
-  background-image: url("../Images/Images/contacto.png");
-  background-repeat: no-repeat;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  margin-left: 25%;
-}
-.form-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40px;
-}
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: none;
   border: 2px solid #835009;
   background-color: #ede8d0;
-
   padding: 80px;
   border-radius: 15px;
   gap: 20px;
 }
+
 .personal-dates {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 20px;
-  color: #0f0f0f;
+  color: #835009;
 }
 
 .date {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: start;
+  align-items: center;
+  gap: none;
 }
+
 .input-field {
   height: 20px;
   border-radius: 10px;
   border: 1px solid #906323;
 }
-.btn-form {
-  height: 50px;
-  width: 120px;
-  background-color: transparent;
-  border: 1px solid #311f06;
-  background-color: #402704;
-  border-radius: 20px;
-  color: #ffffff;
-}
-.inscripcion {
-  display: flex;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../Images/Images/profes.png");
-  background-repeat: no-repeat;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.btn {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  background-color: #402704;
-  border-radius: 20px;
-  color: #ffffff;
-  padding: 20px;
-  font-size: 15px;
-  border-color: #ffffff;
-  margin-top: 20px;
-  align-items: center;
-}
 
 @media (min-width: 320px) and (max-width: 767px) {
   .menu {
     display: block;
+    font-size: 14px;
   }
-
   .fotos1 {
     width: 300px;
     height: 300px;
@@ -509,9 +592,9 @@ p {
   }
   .presentacion {
     width: 100%;
-    height: auto;
+    height: 120px;
   }
-  .title,
+  .title, .title1,
   .titulo {
     font-size: 30px;
     text-align: center;
@@ -519,18 +602,26 @@ p {
   .objetivo1,
   .objetivo2,
   .objetivo3 {
-    width: 100%;
+    width: 290px;
     height: auto;
     display: block;
+    padding-right: 0px;
     font-size: 6px;
+  }
+  .objetivo1 p,
+  .objetivo2 p,
+  .objetivo3 p {
+    font-size: 13px;
+  }
+  .titulo {
+    font-size: 20px;
   }
   .info {
     flex-direction: column;
     width: 100%;
-    height: 550px;
+    height: auto;
     gap: 0;
   }
-
   .card {
     display: flex;
     flex-direction: column;
@@ -539,24 +630,187 @@ p {
     width: 50%;
     z-index: 1;
   }
-
   .button {
     margin: 0;
     margin-top: 20px;
     width: 100px;
     z-index: 1;
   }
-
   .circulo {
-    width: 55%;
+    width: 100px;
     height: 80px;
   }
   .info2 {
     font-size: 20px;
   }
+  video {
+    height: 120px;
+  }
+  .Imagesdir {
+    height: 200px;
+    width: 60%;
+  }
+  .cardss {
+    gap: 10px;
+  }
+  .Directivas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    height: 700px;
+    width: 100%;
+    border-top: 2px solid black;
+  }
+  .Directivas .trayectoria {
+    font-size: 14px;
+  }
+  .Images2 {
+    object-fit: fill;
+    height: 120px;
+    width: 100%;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    width: 50px;
+  }
+  .card1 {
+    width: 320px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+  .instalacion {
+    width: 250px;
+    height: 220px;
+    object-fit: fill;
+  }
+  .foto {
+    height: 250px;
+    width: 240px;
+  }
+  .dudass {
+    font-size: 25px;
+    text-align: center;
+  }
+  .button2 {
+    height: 50px;
+    width: 140px;
+    font-size: 14px;
+  }
+  .presentacion5 {
+    width: 200px;
+    height: 150px;
+    align-items: center;
+  }
+  .presentacion.inscripcion {
+    width: 100%;
+    margin: none;
+  }
+  .form {
+    width: 300px;
+    height: 300px;
+    padding: 0px;
+    justify-content: center;
+    text-align: center;
+  }
+  .personal-date {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100px;
+    gap: 10px;
+  }
+  .input-field {
+    width: 100px;
+  }
+  .btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 150px;
+    padding: 10px;
+    font-size: 10px;
+  }
+  .title1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .footer {
+    height: 50px;
+  }
 }
-
+@media (min-width: 375px) {
+  .presentacion {
+    width: 100%;
+    height: 200px;
+  }
+  .info {
+    height: 700px;
+  }
+  .circulo {
+    width: 100px;
+    height: 70px;
+    gap: 10px;
+  }
+  .card1 {
+    width: 370px;
+  }
+  .Imagesdir {
+    height: 150px;
+    width: 110px;
+  }
+  .Directivas {
+    height: 600px;
+    width: 100%;
+    border-top: 2px solid black;
+  }
+  .Directivas .trayectoria {
+    padding: none;
+    font-size: 14px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+  }
+  .circulo {
+    width: 100px;
+    height: 70px;
+    gap: 10px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1040px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+  }
+  .info {
+    height: 300px;
+  }
   .fotos1 {
     width: 427px;
   }
@@ -568,10 +822,128 @@ p {
   .objetivo3 p {
     font-size: 14px;
   }
-
   .objetivo1,
   .objetivo2,
   .objetivo3 {
     align-items: center;
+    flex-direction: column;
+    height: 400px;
+  }
+  .objetivo1 .Images,
+  .objetivo2 .Images,
+  .objetivo3 .Images {
+    height: 200px;
+    object-fit: contain;
+  }
+  .cards {
+    padding: 40px;
+    gap: 10px;
+  }
+  .card1 {
+    width: 100%;
+    gap: 10px;
+  }
+  .instalacion {
+    width: 300px;
+    height: 220px;
+    object-fit: fill;
+  }
+  .Directivas {
+    height: auto;
+    width: 100%;
+    border-top: 2px solid black;
+  }
+  .Directivas .trayectoria {
+    font-size: 20px;
+  }
+  .foto {
+    height: 400px;
+    width: 500px;
+    gap: 20px;
+  }
+  .dudass {
+    font-size: 30px;
+    text-align: center;
+  }
+  .presentacion.inscripcion {
+    width: 100%;
+  }
+  .title1 {
+    font-size: 40px;
+    text-align: center;
   }
 }
+@media (min-width: 1114px) {
+  .foto {
+    height: 600px;
+    width: 700px;
+  }
+}
+@media (min-width: 1024px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+  }
+  .title1 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .objetivo1,
+  .objetivo2,
+  .objetivo3 {
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .objetivo1 .h3,
+  .objetivo2 .h3,
+  .objetivo3 .h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .Directivas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: none;
+    height: 400px;
+    width: 100%;
+    justify-self: center;
+  }
+  .Directivas .trayectoria {
+    font-size: 20px;
+    text-align: center;
+  }
+  .Imagesdir {
+    width: 350px;
+    height: 300px;
+    object-fit: contain;
+  }
+  .Images {
+    width: 300px;
+    height: 200px;
+  }
+  .cards {
+    padding: 40px;
+    gap: 10px;
+  }
+  .card1 {
+    width: 100%;
+    gap: 10px;
+  }
+  .info {
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

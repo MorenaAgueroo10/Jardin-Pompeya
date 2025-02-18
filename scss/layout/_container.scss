@@ -1,0 +1,11 @@
+.containersec {
+  @include flex(column, wrap, center, center, none);
+}
+.container2 {
+  @include flex(column, wrap, center, center, none);
+}
+.form-container {
+  @include flex(none, none, center, center, none);
+
+  margin-top: 40px;
+}

@@ -1,0 +1,103 @@
+.cards1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.objetivo1 {
+  background-color: map-get($backcolor, color3);
+  @include flex(row, none, none, none, none);
+  padding-right: 50px;
+  height: 40vh;
+  width: 80%;
+}
+
+.objetivo2 {
+  background-color: map-get($backcolor, color3);
+  @include flex(row-reverse, none, none, none, none);
+  height: 40vh;
+  width: 80%;
+  margin-top: 10px;
+  padding-right: 50px;
+  text-align: center;
+}
+.objetivo3 {
+  background-color: map-get($backcolor, color3);
+  @include flex(row, none, none, none, none);
+  padding-right: 50px;
+  height: 40vh;
+  width: 80%;
+  margin-top: 10px;
+}
+
+p {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.cards {
+  @include grid(center, 20px);
+  grid-template-columns: repeat(2, 1fr);
+}
+.card1 {
+  @include grid(center, none);
+  align-items: center;
+  background-color: map-get($backcolor, color3);
+  font-family: "Twinkle Star", serif;
+  border-radius: 20px;
+  width: 450px;
+  height: 370px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.cardss {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+}
+.sala {
+  @include flex(column, wrap, center, center, 10px);
+  padding: 20px;
+  width: 100%;
+  border-top: 2px solid black;
+}
+
+.contenido {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.informacion2 {
+  background-color: map-get($backcolor, color3);
+  @include flex(column, wrap, center, center, none);
+  width: 80%;
+  height: 500px;
+  margin-top: 10px;
+
+  box-shadow: 2px 2px 2px 1px #ebb57b;
+}
+
+.inscripcion {
+  @include flex(column, wrap, center, center, 10px);
+  height: 300px;
+
+  width: 100%;
+}
+.presentacion5 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../Images/Images/contacto.png");
+  background-repeat: no-repeat;
+  height: 300px;
+  @include flex(none, wrap, center, center, none);
+
+  width: 50%;
+  margin-left: 25%;
+}

@@ -1,0 +1,6 @@
+.footer {
+  background-color: map-get($backcolor, color6);
+  color: map-get($colortxt, colortxt2);
+  @include flex(none, wrap, start, center, none);
+  height: 60px;
+}

@@ -1,0 +1,20 @@
+.nav-bar {
+  background-color: map-get($backcolor, color6);
+  height: 90px;
+  @include flex(row, wrap, space-around, center, 10px);
+  .menu {
+    li {
+      text-decoration: none;
+      @include flex(none, none, none, center, 20px);
+
+      a {
+        text-decoration: none;
+        color: map-get($colortxt, colortxt2);
+        transition: all 1.5s;
+        &:hover {
+          background-color: map-get($backcolor, color7);
+        }
+      }
+    }
+  }
+}
