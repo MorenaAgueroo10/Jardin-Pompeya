@@ -149,7 +149,7 @@ p {
 .presentacion5 {
   background-size: cover;
   background-position: center;
-  background-image: url("../Images/Images/contacto.png");
+  background-image: url("../Images/Images/Logo-Jardin.png");
   background-repeat: no-repeat;
   height: 300px;
   display: flex;
@@ -158,8 +158,9 @@ p {
   justify-content: center;
   align-items: center;
   gap: none;
-  width: 50%;
-  margin-left: 25%;
+  margin-left: 30%;
+  object-fit: contain;
+  width: 40%;
 }
 
 .footer {
@@ -708,6 +709,7 @@ h3 {
   .presentacion5 {
     width: 200px;
     height: 150px;
+    margin-left: 20%;
     align-items: center;
   }
   .presentacion.inscripcion {
